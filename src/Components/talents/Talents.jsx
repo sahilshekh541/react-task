@@ -23,7 +23,7 @@ const Talents = ({
   const handleLocalCheckboxChange = (e) => {
     if (oneSelect) {
       handleCheckboxChange(e, index);
-      if (!chkdisable || disable) {
+      if (e.target.checked) {
         document.querySelectorAll(`.chk-${index}`).forEach((i) => {
           i.setAttribute("disabled", "true");
         });
@@ -35,7 +35,7 @@ const Talents = ({
       }
     } else {
       handlechangeptalent(e, index);
-      if (chkdisable) {
+      if (e.target.checked) {
         document.querySelectorAll(`.chk-${index}`).forEach((i) => {
           i.removeAttribute("disabled");
         });

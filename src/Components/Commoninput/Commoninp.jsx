@@ -32,7 +32,7 @@ const Commoninp = ({
   return (
     <div className={`${w}`}>
       <span>{field}</span>
-      <div className={`input-row d-flex  border  p-1 mt-1 border-black`}>
+      <div className={`input-row d-flex border border-black p-1 mt-1 `}>
         <input
           name={name}
           id={name}
@@ -40,6 +40,7 @@ const Commoninp = ({
           className={`${classname} px-1 text-primary border-0 chk-${index} `}
           placeholder={placeholder ? placeholder : field}
           value={selectedValue}
+          required
           disabled={true || disable}
           onChange={handleChange}
         />
