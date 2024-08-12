@@ -1,5 +1,5 @@
 import "../../index.css";
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 const InputContainer = ({
   name,
   type,
@@ -25,7 +25,7 @@ const InputContainer = ({
   };
 
   return (
-    <div className="col w-25">
+    <div className="col">
       <label htmlFor={name} className="md">
         {field}{" "}
         <span
@@ -35,7 +35,7 @@ const InputContainer = ({
           *
         </span>
         <input
-          className={`d-block px-2 mt-1 h-10 w-100  inp ${classname}`}
+          className={`d-block px-2 mt-1 h-10 inp ${classname}`}
           name={name}
           id={name}
           type={type}

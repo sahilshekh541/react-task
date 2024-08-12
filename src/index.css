@@ -24,7 +24,7 @@ form {
 
 .inp {
   width: 290px !important;
-  max-width: 290px !important;
+  /* max-width: 400px !important; */
   height: 32px;
 }
 
@@ -159,6 +159,17 @@ form {
   }
 }
 
+@media only screen and (min-width:1300px) {
+  .rown3 {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+  }
+
+  .rown3 .inp {
+    width: 24vw !important;
+  }
+}
+
 @media only screen and (max-width:1000px) {
 
 
@@ -230,6 +241,11 @@ form {
     width: 300px !important;
   }
 
+  .cur-clear-btn {
+    font-size: 1.2rem;
+    right: 5px;
+    top: 74%;
+  }
 }
 
 @media only screen and (max-width:726px) {
